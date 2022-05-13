@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.StudyController">
+   <children>
+      <VBox layoutX="-15.0" layoutY="-8.0" onKeyPressed="#MOVE" onKeyReleased="#STOP" onMouseClicked="#GO" prefHeight="700.0" prefWidth="1400.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Region fx:id="WALL2" layoutX="993.5" layoutY="243.0" prefHeight="338.0" prefWidth="16.0" />
+                  <ImageView fitHeight="774.0" fitWidth="1422.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@Black.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="329.0" fitWidth="633.0" layoutX="372.0" layoutY="249.0" pickOnBounds="true" visible="false">
+                     <image>
+                        <Image url="@Floor.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="323.0" fitWidth="16.0" layoutX="367.0" layoutY="259.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@Granica.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="label" layoutX="346.0" layoutY="66.0" prefHeight="56.0" prefWidth="714.0" text="Нажми на  меня мышкой, чтобы начать" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="93.0" fitWidth="78.0" layoutX="50.0" layoutY="624.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@stone.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="ZapasKamney" layoutX="136.0" layoutY="637.0" text="x 1" textFill="WHITE">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="78.0" fitWidth="159.0" layoutX="161.0" layoutY="626.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Uskor.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="ZapasUskor" layoutX="275.0" layoutY="637.0" text="x 1" textFill="WHITE">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="EXIT" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="25.0" layoutX="370.0" layoutY="399.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="16.0" />
+                  <ImageView fitHeight="323.0" fitWidth="16.0" layoutX="520.5" layoutY="90.0" pickOnBounds="true" rotate="90.0" smooth="false">
+                     <image>
+                        <Image url="@Granica.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="323.0" fitWidth="16.0" layoutX="840.0" layoutY="90.0" pickOnBounds="true" rotate="270.0" smooth="false">
+                     <image>
+                        <Image url="@Granica.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="323.0" fitWidth="16.0" layoutX="520.5" layoutY="413.0" pickOnBounds="true" rotate="90.0" smooth="false">
+                     <image>
+                        <Image url="@Granica.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="323.0" fitWidth="16.0" layoutX="840.0" layoutY="413.0" pickOnBounds="true" rotate="270.0" smooth="false">
+                     <image>
+                        <Image url="@Granica.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="323.0" fitWidth="16.0" layoutX="993.5" layoutY="259.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@Granica.png" />
+                     </image>
+                  </ImageView>
+                  <Region fx:id="WALL" layoutX="367.0" layoutY="244.0" prefHeight="338.0" prefWidth="16.0" />
+                  <Region fx:id="WALL1" layoutX="367.0" layoutY="242.0" prefHeight="17.0" prefWidth="644.0" />
+                  <Region fx:id="WALL3" layoutX="366.0" layoutY="567.0" prefHeight="17.0" prefWidth="644.0" />
+                  <ImageView fitHeight="323.0" fitWidth="16.0" layoutX="918.0" layoutY="259.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@Granica.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="36.0" layoutX="915.0" layoutY="502.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="35.0" layoutX="913.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                  <Region fx:id="WALL4" layoutX="918.0" layoutY="539.0" prefHeight="51.0" prefWidth="16.0" />
+                  <Region fx:id="WALL5" layoutX="918.0" layoutY="227.0" prefHeight="51.0" prefWidth="16.0" />
+                  <Region fx:id="WALL6" layoutX="918.0" layoutY="313.0" maxWidth="17.0" minWidth="16.0" prefHeight="189.0" prefWidth="16.0" />
+                  <ImageView fitHeight="323.0" fitWidth="16.0" layoutX="880.0" layoutY="259.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@Granica.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="36.0" layoutX="875.0" layoutY="399.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                  <Region fx:id="WALL7" layoutX="880.0" layoutY="210.0" maxWidth="17.0" minWidth="16.0" prefHeight="189.0" prefWidth="16.0" />
+                  <Region fx:id="WALL8" layoutX="880.0" layoutY="435.0" maxWidth="17.0" minWidth="16.0" prefHeight="189.0" prefWidth="16.0" />
+                  <ImageView fitHeight="323.0" fitWidth="16.0" layoutX="842.0" layoutY="259.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@Granica.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="36.0" layoutX="838.0" layoutY="277.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="36.0" layoutX="836.0" layoutY="502.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="36.0" layoutX="838.0" layoutY="399.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                  <Region fx:id="WALL9" layoutX="842.0" layoutY="227.0" prefHeight="50.0" prefWidth="16.0" />
+                  <Region fx:id="WALL10" layoutX="842.0" layoutY="313.0" prefHeight="86.0" prefWidth="16.0" />
+                  <Region fx:id="WALL11" layoutX="842.0" layoutY="435.0" prefHeight="67.0" prefWidth="16.0" />
+                  <Region fx:id="WALL12" layoutX="842.0" layoutY="538.0" prefHeight="67.0" prefWidth="16.0" />
+                  <ImageView fitHeight="323.0" fitWidth="16.0" layoutX="673.0" layoutY="184.0" pickOnBounds="true" rotate="90.0" smooth="false">
+                     <image>
+                        <Image url="@Granica.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="323.0" fitWidth="16.0" layoutX="673.0" layoutY="318.0" pickOnBounds="true" rotate="90.0" smooth="false">
+                     <image>
+                        <Image url="@Granica.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="323.0" fitWidth="16.0" layoutX="518.0" layoutY="259.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@Granica.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="37.0" layoutX="512.0" layoutY="259.5" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="36.0" layoutX="512.0" layoutY="487.5" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="36.0" layoutX="513.0" layoutY="435.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                  <Region fx:id="WALL13" layoutX="518.0" layoutY="524.0" prefHeight="67.0" prefWidth="16.0" />
+                  <Region fx:id="WALL14" layoutX="518.0" layoutY="472.0" prefHeight="16.0" prefWidth="324.0" />
+                  <Region fx:id="WALL15" layoutX="518.0" layoutY="296.0" prefHeight="139.0" prefWidth="16.0" />
+                  <Circle fx:id="Stone1" layoutX="849.0" layoutY="297.0" radius="8.0" stroke="BLACK" strokeType="INSIDE">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Circle>
+                  <Circle id="Stone1" fx:id="UscorF" layoutX="849.0" layoutY="520.0" radius="8.0" stroke="BLACK" strokeType="INSIDE">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="1.0" green="0.27241018414497375" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.8333333134651184" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Circle>
+                  <Button id="Policeman" fx:id="Prisoner" defaultButton="true" layoutX="950.0" layoutY="283.0" lineSpacing="8.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="0.0" style="-fx-background-color: #ff5e00;" stylesheets="" textFill="#ff5e00" />
+                  <Button id="Policeman" fx:id="Policeman" defaultButton="true" layoutX="424.0" layoutY="410.0" lineSpacing="8.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="0.0" style="-fx-background-color: LightBlue;" stylesheets="" />
+                  <Circle fx:id="Stone" layoutX="446.0" layoutY="643.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" visible="false">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill></Circle>
+                  <Region fx:id="WALL16" layoutX="535.0" layoutY="338.0" prefHeight="16.0" prefWidth="307.0" />
+                  <ImageView fitHeight="33.0" fitWidth="23.0" layoutX="367.0" layoutY="399.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@Door.jpg" />
+                     </image>
+                  </ImageView>
+                  <Rectangle fx:id="Instruct" arcHeight="5.0" arcWidth="5.0" fill="#d4d4d4" height="485.0" layoutX="363.0" layoutY="123.0" stroke="BLACK" strokeLineCap="BUTT" strokeType="INSIDE" visible="false" width="677.0" />
+                  <Button fx:id="OUT" layoutX="18.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#OutBottonClick" prefHeight="26.0" prefWidth="36.0" text="&lt;">
+                     <font>
+                        <Font name="System Italic" size="17.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="in1" layoutX="629.0" layoutY="134.0" text="УПРАВЛЕНИЕ">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="in2" layoutX="571.0" layoutY="166.0" text="W, A, S, D - ДВИЖЕНИЕ">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="in3" layoutX="563.0" layoutY="202.0" text="E - ВЗЯТЬ КАМЕНЬ В РУКУ">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="in4" layoutX="585.0" layoutY="234.0" text="Q - БРОСИТЬ КАМЕНЬ">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="in5" layoutX="526.0" layoutY="267.0" text="3 - ИСПОЛЬЗОВАТЬ УСКОРЕНИЕ">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="in6" layoutX="623.0" layoutY="347.0" text="ОСОБЕННОСТИ">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="in7" layoutX="430.0" layoutY="381.0" prefHeight="32.0" prefWidth="552.0" text="ЦЕЛЬ ЗАКЛЮЧЁННЫХ ДОБЕЖАТЬ ДО ВЫХОДА">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="in8" layoutX="390.0" layoutY="413.0" prefHeight="32.0" prefWidth="644.0" text="ЦЕЛЬ ПОЛИЦЕЙСКИХ ПОЙМАТЬ ВСЕХ ЗАКЛЮЧЁННЫХ">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="in9" layoutX="434.0" layoutY="447.0" prefHeight="32.0" prefWidth="544.0" text="ВО ВРЕМЯ УСКОРЕНИЯ НЕЛЬЗЯ БРОСАТЬ КАМНИ">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="in10" layoutX="385.0" layoutY="479.0" prefHeight="32.0" prefWidth="645.0" text="НЕЛЬЗЯ ИСПОЛЬЗОВАТЬ НЕСКОЛЬКО УСКОРЕНИЙ СРАЗУ">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="in11" layoutX="463.0" layoutY="507.0" prefHeight="32.0" prefWidth="480.0" text="ВСЕ КАМНИ И УСКОРЕНИЯ ОДНОРАЗОВЫЕ">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="in12" layoutX="598.0" layoutY="299.0" text="R - ОСТАНОВИТЬСЯ">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="in13" layoutX="405.0" layoutY="534.0" prefHeight="32.0" prefWidth="611.0" text="В УЗКИХ КОРРИДОРАХ НЕТ СМЫСЛА БРОСАТЬ КАМНИ">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="in14" layoutX="421.0" layoutY="559.0" prefHeight="32.0" prefWidth="582.0" text="ПОПАДАНИЕ КАМНЯ ОСТАНАВЛИВАЕТ НА ВРЕМЯ">
+                     <font>
+                        <Font name="Comic Sans MS" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label1" layoutX="549.0" layoutY="130.0" prefHeight="56.0" prefWidth="303.0" text="ВЫ ПРОИГРАЛИ" textAlignment="CENTER" textFill="WHITE" visible="false">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label11" layoutX="550.0" layoutY="140.0" prefHeight="56.0" prefWidth="303.0" text="ВЫ ВЫИГРАЛИ" textAlignment="CENTER" textFill="WHITE" visible="false">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
